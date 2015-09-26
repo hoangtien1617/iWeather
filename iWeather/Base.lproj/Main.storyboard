@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="locations" translatesAutoresizingMaskIntoConstraints="NO" id="dwO-wl-3DH">
+                                <rect key="frame" x="16" y="37" width="30" height="30"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hà Nội, Việt Nam" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ePw-xl-1xH">
+                                <rect key="frame" x="54" y="37" width="245" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="O" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TFv-9c-13Q">
+                                <rect key="frame" x="245" y="91" width="20" height="25"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R1U-VM-c5s">
+                                <rect key="frame" x="123" y="464" width="75" height="73"/>
+                                <state key="normal" image="updates">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="updateWeather:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hcb-Wu-2CG"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rain" translatesAutoresizingMaskIntoConstraints="NO" id="4O1-aK-Ouj">
+                                <rect key="frame" x="70" y="194" width="180" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="6RF-fy-AJV"/>
+                                    <constraint firstAttribute="width" constant="256" id="AW8-ge-zsV"/>
+                                    <constraint firstAttribute="height" constant="180" id="BiE-Y3-cjO"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="180" id="kQM-W1-Y39"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="AW8-ge-zsV"/>
+                                        <exclude reference="kQM-W1-Y39"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Không có gì quý hơn độc lập tự do hạnh phúc" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nll-qF-Ftp">
+                                <rect key="frame" x="26" y="362" width="269" height="94"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vlc-B1-36q">
+                                <rect key="frame" x="26" y="75" width="242" height="111"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="100"/>
+                                <state key="normal" title="29.6">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="convertF:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qNB-gb-qOR"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="C" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pAV-RI-OBk">
+                                <rect key="frame" x="261" y="109" width="34" height="43"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="4O1-aK-Ouj" secondAttribute="centerX" id="H9c-PT-KnW"/>
+                            <constraint firstAttribute="centerX" secondItem="4O1-aK-Ouj" secondAttribute="centerX" id="Wb3-rm-BB0"/>
+                            <constraint firstAttribute="centerY" secondItem="4O1-aK-Ouj" secondAttribute="centerY" id="ZIy-uM-gOo"/>
+                            <constraint firstAttribute="centerX" secondItem="4O1-aK-Ouj" secondAttribute="centerX" id="dFh-Ej-gqK"/>
+                            <constraint firstAttribute="centerY" secondItem="4O1-aK-Ouj" secondAttribute="centerY" id="jKP-yh-WWS"/>
+                            <constraint firstAttribute="centerY" secondItem="4O1-aK-Ouj" secondAttribute="centerY" id="lnn-DY-AE4"/>
+                            <constraint firstAttribute="centerY" secondItem="4O1-aK-Ouj" secondAttribute="centerY" id="quO-ep-9WD"/>
+                            <constraint firstAttribute="centerX" secondItem="4O1-aK-Ouj" secondAttribute="centerX" id="z5Y-wk-d56"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="H9c-PT-KnW"/>
+                                <exclude reference="Wb3-rm-BB0"/>
+                                <exclude reference="ZIy-uM-gOo"/>
+                                <exclude reference="jKP-yh-WWS"/>
+                                <exclude reference="lnn-DY-AE4"/>
+                                <exclude reference="z5Y-wk-d56"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="CF" destination="pAV-RI-OBk" id="vBf-0j-sj2"/>
+                        <outlet property="location" destination="ePw-xl-1xH" id="PBu-uw-41F"/>
+                        <outlet property="quote" destination="nll-qF-Ftp" id="3ao-HG-hrC"/>
+                        <outlet property="temper" destination="pAV-RI-OBk" id="kV2-5v-2YZ"/>
+                        <outlet property="temperature" destination="Vlc-B1-36q" id="fwb-hR-Fhs"/>
+                        <outlet property="weatherIcon" destination="4O1-aK-Ouj" id="EwP-QN-WOZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="160" y="332"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="locations" width="32" height="32"/>
+        <image name="rain" width="256" height="256"/>
+        <image name="updates" width="256" height="256"/>
+    </resources>
+</document>
